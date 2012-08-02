@@ -5,7 +5,7 @@
 Summary:	A Window Navigator Construction Kit
 Name:		libmatewnck
 Version:	1.4.0
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://mate-desktop.org
