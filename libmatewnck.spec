@@ -1,7 +1,6 @@
-%define	api	1
-%define	major	22
-%define	libname	%mklibname wnck- %{api} %{major}
-%define	devname	%mklibname -d wnck- %{api}
+%define	major	0
+%define	libname	%mklibname matewnck %{major}
+%define	devname	%mklibname -d matewnck
 
 Summary:	A Window Navigator Construction Kit
 Name:		libmatewnck
@@ -58,19 +57,18 @@ NOCONFIGURE=yes ./autogen.sh
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc README AUTHORS
-%{_bindir}/wnckprop
-%{_bindir}/wnck-urgency-monitor
+%{_bindir}/matewnckprop
+%{_bindir}/matewnck-urgency-monitor
 
 %files -n %{libname}
-%{_libdir}/libmatewnck-%{api}.so.%{major}*
+%{_libdir}/libmatewnck.so.%{major}*
 %{_libdir}/girepository-1.0/MateWnck-1.0.typelib
 
 %files -n %{devname}
-%doc ChangeLog
+%doc ChangeLog README AUTHORS
 %doc %{_datadir}/gtk-doc/html/libmatewnck
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
-%{_datadir}/gir-1.0/Wnck-1.0.gir
+%{_datadir}/gir-1.0/MateWnck-1.0.gir
 
