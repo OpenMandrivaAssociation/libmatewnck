@@ -62,7 +62,7 @@ NOCONFIGURE=yes ./autogen.sh
 
 %files -n %{libname}
 %{_libdir}/libmatewnck.so.%{major}*
-%{_libdir}/girepository-1.0/MateWnck-1.0.typelib
+%{_libdir}/girepository-1.0/Matewnck-1.0.typelib
 
 %files -n %{devname}
 %doc ChangeLog README AUTHORS
@@ -70,5 +70,5 @@ NOCONFIGURE=yes ./autogen.sh
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
-%{_datadir}/gir-1.0/MateWnck-1.0.gir
+%{_datadir}/gir-1.0/Matewnck-1.0.gir
 
