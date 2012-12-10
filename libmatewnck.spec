@@ -72,3 +72,14 @@ NOCONFIGURE=yes ./autogen.sh
 %{_libdir}/pkgconfig/*
 %{_datadir}/gir-1.0/Matewnck-1.0.gir
 
+
+
+%changelog
+* Fri Aug 03 2012 Bogdano Arendartchuk <bogdano@mandriva.com> 1.4.0-2
++ Revision: 811640
+- release bump (previous release partially installed into the repository)
+
+* Thu Aug 02 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.4.0-1
++ Revision: 811635
+- imported package libmatewnck
+
